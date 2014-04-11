@@ -1,0 +1,7 @@
+.bundle
+.sass-cache
+.cache
+build
+vendor/bundle
+dummy.*
+credentials.rb

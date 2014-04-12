@@ -1,0 +1,29 @@
+times:
+  - start: "09:00"
+    end: "09:40"
+  - start: "09:00"
+    end: "10:40"
+
+rooms:
+  "Room 1": Great Room
+  "Room 2": Sir Alexender
+
+tracks:
+  "Room 1":
+    - speaker: Speaker 1
+      talk: hello world
+      abstract: some strange things that you
+               wont understand
+
+    - speaker: Speaker 2
+      talk: responsive web
+      abstract: oo cool things.
+
+  "Room 2":
+    - speaker: Speaker 3
+      talk: Mobile Apps
+      abstract: everything is an app
+
+    - speaker: null
+      talk: null
+      abstract: null

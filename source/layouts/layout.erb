@@ -5,15 +5,19 @@
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <% data.global.meta and data.global.meta.each do |name, content| %>
+      <%= tag :meta, :name => name, :content => content %>
+    <% end %>
     
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || data.global.title || "webBox" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "main" %>
   </head>
   
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" %>
+    <%= javascript_include_tag  "main" %>
   </body>
 </html>

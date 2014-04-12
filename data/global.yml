@@ -6,6 +6,13 @@ venue:
   address: Ars Electronica Strasse
   coords: 15.21231, 15.123123
 
+contact:
+  mail: social@codefront.io
+
+social:
+  twitter: codefront
+  facebook: codefrontio
+
 meta:
   description: a conference
   keywords: a, b, c

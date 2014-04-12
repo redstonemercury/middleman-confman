@@ -1,0 +1,21 @@
+<div class="row">
+<% data.calendar.rooms.each do |room, room_name| %>
+  <div class="col-xs-<%= 12 / data.calendar.rooms.length %>">
+    <% sessions = data.calendar.tracks[room] %>
+    <h3><%= room_name %></h3>
+    <% sessions.each do |track| %>
+    <% time = data.calendar.times[sessions.index track] %>
+    <article>
+      <time><%= time.start %> - <%= time.end %></time>
+      <h4><%= track.speaker %></h4>
+      <h5><%= track.talk %></h5>
+      <p>
+        <% if track.abstract %>
+          <%= markdown track.abstract %>
+        <% end %>
+      </p>
+    </article>
+    <% end %>
+  </div>
+<% end %>
+</div>

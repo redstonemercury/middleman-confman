@@ -23,7 +23,11 @@ scripts:
           <a href="#home">Home</a>
         </li>
         <% data.pages.each do |page| %>
-        <li><a href="#<%= page.to_url %>"><%= page %></a></li>
+        <% 
+          title = page.keys[0]
+          subtext = page[title]
+        %>
+        <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
         <% end %>
         <li class="social">
           <a href="http://twitter.com/<%= data.global.social.twitter %>">
@@ -47,16 +51,27 @@ scripts:
 <div class="navbar-placeholder"></div>
 
 <header id="home">
-  
+<%= partial "partials/header" %>  
 </header>
 
 <% data.pages.each do |page| %>
-<% id = page.to_url %>
+<%
+  title = page.keys[0]
+  subtext = page[title]
+%>
+<% id = title.to_url %>
 <div id="<%= id %>" class="block">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1><%= page %></h1>
+        <div class="page-header">
+          <h1>
+            <%= title %>
+            <% if subtext %>
+            <small><%= subtext %></small>
+            <% end %>
+          </h1>
+        </div>
         <%= partial "partials/#{id}" %>
       </div>
     </div>

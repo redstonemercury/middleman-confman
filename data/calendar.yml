@@ -1,29 +1,58 @@
 times:
+  - start: "08:00"
+    end: "09:00"
+
   - start: "09:00"
     end: "09:40"
+
   - start: "09:00"
     end: "10:40"
+
+  - start: "12:00"
+    end: "13:30"
 
 rooms:
   "Room 1": Great Room
   "Room 2": Sir Alexender
+  "Room 3": Lala lolo
 
 tracks:
   "Room 1":
-    - speaker: Speaker 1
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 1
       talk: hello world
       abstract: some strange things that you
                wont understand
 
-    - speaker: Speaker 2
+    - type: talk
+      speaker: Speaker 2
       talk: responsive web
       abstract: oo cool things.
 
+    - type: break
+      description: Lunch
+      icon: cutlery
+
   "Room 2":
-    - speaker: Speaker 3
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 3
       talk: Mobile Apps
       abstract: everything is an app
 
-    - speaker: null
+    - type: talk
+      speaker: null
       talk: null
       abstract: null
+
+  "Room 3":
+    - type: break
+      description: Registration
+      icon: barcode

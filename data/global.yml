@@ -13,6 +13,10 @@ social:
   twitter: codefront
   facebook: codefrontio
 
+event:
+  eventbrite: http://codefront2014.eventbrite.com
+  lanyrd: http://lanyrd.com/2014/codefront
+
 meta:
   description: a conference
   keywords: a, b, c

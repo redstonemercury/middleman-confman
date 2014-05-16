@@ -71,8 +71,20 @@ scripts:
             <small><%= subtext %></small>
             <% end %>
           </h1>
+          <% if data.global.debug %>
+          <a href="<%= api id %>" target="_self"><span class="label label-info">JSON API</span></a>
+          <% end %>
         </div>
-        <%= partial "partials/#{id}" %>
+        <% if File.exists?("source/partials/_#{id}.erb") %>
+          <%= partial "partials/#{id}" %>
+        <% else %>
+          <div class="alert alert-warning">
+            <i class="fa fa-warning"></i>&nbsp;
+            <strong>Warning:</strong> Partial <strong><%= id %></strong> does not exists.
+            Create the file <code>/source/partials/_<%= id %>.erb</code>
+            If you don't want this section, delete it from <code>/data/pages.yml</code> file.
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

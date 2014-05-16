@@ -26,7 +26,7 @@ tracks:
       speaker: Speaker 1
       talk: hello world
       abstract: some strange things that you
-               wont understand
+                **asd**
 
     - type: talk
       speaker: Speaker 2

@@ -1,4 +1,5 @@
-- name: Fatih Kadir Akın
+- id: 1
+  name: Fatih Kadir Akın
   work: 
     company: webBox
     title: Developer
@@ -8,7 +9,8 @@
     twitter: fkadev
     github: f
 
-- name: Ugur Ozyilmazel
+- id: 2
+  name: Ugur Ozyilmazel
   work:
     company: webBox
     title: Developer

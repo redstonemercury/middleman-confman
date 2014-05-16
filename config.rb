@@ -24,7 +24,10 @@ end
 
 helpers do
   def markdown(data)
-    Tilt['md'].new { data }.render 
+    Tilt['md'].new { data }.render
+  end
+  def api(page)
+    "#{API_PREFIX}/#{page}.json"
   end
 end
 

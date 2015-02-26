@@ -1,24 +1,24 @@
-title: codeFront.io 2014
-date: 11.10.2014
+title: Erie Day of Code
+date: 04.25.2015
 
 venue:
-  name: Ars Electronica
-  address: Ars Electronica Strasse
-  coords: 15.21231, 15.123123
+  name: The Brewerie at Union Station
+  address: 123 W 14th St, Erie, PA 16501-1717
+  coords: 42.120892, -80.082129
 
 contact:
-  mail: social@codefront.io
+  mail: contact@eriedayofcode.com
 
 social:
-  twitter: codefront
-  facebook: codefrontio
+  twitter: eriedayofcode
+  facebook: eriedayofcode
 
 event:
-  eventbrite: http://codefront2014.eventbrite.com
-  lanyrd: http://lanyrd.com/2014/codefront
+  eventbrite: http://eriedayofcode2015.eventbrite.com
+  lanyrd: http://lanyrd.com/2015/eriedayofcode
 
 meta:
   description: a conference
   keywords: a, b, c
 
-debug: true
+debug: false

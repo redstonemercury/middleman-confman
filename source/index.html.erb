@@ -30,17 +30,17 @@ scripts:
         <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
         <% end %>
         <li class="social">
-          <a href="http://twitter.com/<%= data.global.social.twitter %>">
+          <a href="http://twitter.com/<%= data.global.social.twitter %>" target="_blank">
             <i class="fa fa-twitter"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/<%= data.global.social.facebook %>">
+          <a href="https://www.facebook.com/<%= data.global.social.facebook %>" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> website">
+          <a href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> Erie Day of Code" target="_blank">
             <i class="fa fa-envelope"></i>
           </a>
         </li>
@@ -91,14 +91,13 @@ scripts:
 </div>
 <% end %>
 
-<footer id="footer">
+<footer id="footer" class="footer navbar-default navbar-fixed-bottom" role="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <a href="http://webbox.io">
-          <%= image_tag "webbox.png" %>
-        </a>
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="photocredit">
+        Background photo by: <a href="https://www.facebook.com/CaseyRandPhotography" target="_blank">Casey Rand</a>
       </div>
     </div>
   </div>
 </footer>
+<div class="navbar-placeholder"></div>

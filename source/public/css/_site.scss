@@ -1,4 +1,16 @@
+$light-color: #FCBD3D;
+
+html {
+	font-family: sans-serif;
+}
+
 body {
+  background: url(/images/erie-bayfront.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 50px;
   .bio strong {
     @include linear-gradient(to top, red, orange);
     @include border-radius(5px);
@@ -7,6 +19,127 @@ body {
   }
 }
 
+div.jumbotron {
+  text-align: right;
+  color: white;
+  background: url(/images/erie-bayfront.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 50px;
+  padding: 0% 5% 0% 5%;
+}
+
+div.jumbotron p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+div.jumbotron h1 {
+  text-align: right;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #FCBD3D;
+}
+
+h2 {
+  color: #FCBD3D;
+}
+
+h3 {
+  color: #FCBD3D;
+}
+
+div.col-xs-12 {
+  background-color: rgba(0,0,0, 0.8);
+  color: white;
+  size: 1rem;
+  padding: 0px 10% 0px 10%;
+}
+
+div.email-signup {
+  font-size: 2rem;
+  color: #FCBD3D;
+}
+
+div.email-signup input {
+  color: black;
+  padding:10px 16px;
+  font-size:16px;
+  line-height:1.33;
+  border-radius:6px;
+  display:inline-block;
+  margin-bottom:0;
+  font-weight:400;
+  vertical-align:middle;
+  background-image:none;
+  border:1px solid transparent;
+  white-space:nowrap;
+  padding:6px 12px;
+  font-size:14px;
+  line-height:1.42857143;
+  border-radius:4px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+div.email-signup input.button {
+  color: black;
+  padding:10px 16px;
+  font-size:16px;
+  line-height:1.33;
+  border-radius:6px;
+  display:inline-block;
+  margin-bottom:0;
+  font-weight:400;
+  text-align:center;
+  vertical-align:middle;
+  cursor:pointer;
+  background-image:none;
+  border:1px solid transparent;
+  white-space:nowrap;
+  padding:6px 12px;
+  font-size:14px;
+  line-height:1.42857143;
+  border-radius:4px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  background-color:#FCBD3D;
+  border-color:#FCBD3D
+}
+
+div.email-signup input.button:hover {
+  background-color:#fdce6f;
+  border-color:#fdce6f
+}
+
 .navbar-placeholder {
   height: 50px;
+}
+
+.navbar-header {
+  height: 10px;
+}
+
+.navbar-footer {
+  height: 10px;
+}
+
+.photo-credit {
+  font-weight: normal;
+  a {
+      color: $light-color;
+      &:hover {
+          color: lighten($light-color, 10%);
+      }
+  }
 }

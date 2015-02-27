@@ -34,10 +34,23 @@ body {
 }
 
 #jumbotron h1 {
-  text-align: right;
   color: white;
+  text-align: right;
   font-weight: bold;
   font-size: 5rem;
+}
+
+#jumbotron h2 {
+  color: #FCBD3D;
+  text-align: right;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#jumbotron p {
+  color: white;
+  text-align: right;
+  font-size: 1.7rem;
 }
 
 h1 {
@@ -51,6 +64,10 @@ h2 {
 
 h3 {
   color: #FCBD3D;
+}
+
+p {
+  font-size: 1.5rem
 }
 
 div.details {

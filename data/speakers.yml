@@ -6,15 +6,15 @@
   bio: hello world
        adasd
   social:
-    twitter: fkadev
-    github: f
+    twitter: handle
+    github: handle
 
 - id: 2
-  name: Ugur Ozyilmazel
+  name: Speaker 2
   work:
-    company: webBox
+    company: Company 2
     title: Developer
   bio: hello
        world **bold** _italic_
   social:
-    dribble: vigo
+    dribble: tag

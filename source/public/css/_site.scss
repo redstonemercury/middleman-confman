@@ -10,7 +10,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px 50px;
   .bio strong {
     @include linear-gradient(to top, red, orange);
     @include border-radius(5px);
@@ -19,7 +18,7 @@ body {
   }
 }
 
-div.jumbotron {
+#jumbotron {
   text-align: right;
   color: white;
   background: url(/images/erie-bayfront.jpg) no-repeat center center fixed;
@@ -27,19 +26,18 @@ div.jumbotron {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px 50px;
-  padding: 0% 5% 0% 5%;
 }
 
-div.jumbotron p {
+#jumbotron p {
   color: white;
   font-size: 1.8rem;
 }
 
-div.jumbotron h1 {
+#jumbotron h1 {
   text-align: right;
   color: white;
   font-weight: bold;
+  font-size: 5rem;
 }
 
 h1 {
@@ -55,11 +53,10 @@ h3 {
   color: #FCBD3D;
 }
 
-div.col-xs-12 {
+div.details {
   background-color: rgba(0,0,0, 0.8);
   color: white;
   size: 1rem;
-  padding: 0px 10% 0px 10%;
 }
 
 div.email-signup {
@@ -127,7 +124,7 @@ div.email-signup input.button:hover {
 }
 
 .navbar-header {
-  height: 10px;
+  height: 50px;
 }
 
 .navbar-footer {

@@ -1,13 +1,20 @@
-<div style="fixed: right; width: 100%; height: 100%" class="jumbotron">
-  <div style="float: right; width: 70%;" class="introduction">
-    <h1><%= data.global.title %></h1>
-    <h2>April 25, 2015 | Erie, PA | The Brewerie at Union Station</h2>
+<div class="container">
+  <div class="col-xs-8 pull-right" id="jumbotron">
+    <h1>
+      <%= data.global.title %>
+    </h1>
+    <h2>
+      April 25, 2015 | Erie, PA | The Brewerie at Union Station
+    </h2>
     <p>
       A one day event to learn about awesome things in the world of open source web development, and to socialize and work together with other developers throughout the day
     </p>
     <form class="contact" action="//eriedayofcode.us10.list-manage.com/subscribe/post?u=3fcd98d64025f034a082fe384&id=bb907d9e18" method="POST" enctype="multipart/form-data">
       <div class="email-signup">
-        <label for="Email Address">Subscribe to our mailing list for updates and ticket sales</label><br />
+        <label for="Email Address">
+          Subscribe to our mailing list for updates and ticket sales
+        </label>
+        <br />
         <input class="input" id="EMAIL" placeholder="Email Address" type="email" class="input" name="EMAIL" value="" size="30" />
         <input class="button btn btn-primary btn-default" name="subscribe" id="subscribe" type="submit" value="Subscribe" />
         <br>
